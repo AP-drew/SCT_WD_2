@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchX - Premium Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-overlay" id="bgOverlay"></div>
+  
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="logo">WatchX</div>
+        <div class="header-controls">
+          <button class="icon-btn" id="bgBtn" title="Change Background">🖼️</button>
+          <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
+        </div>
+      </div>
+      
+      <div class="time-display">
+        <div class="main-time">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="milliseconds">.<span id="ms">000</span></div>
+      </div>
+
+      <div class="controls" id="controls">
+        <button class="btn-start" id="startStop">Start</button>
+        <button class="btn-reset" id="reset" disabled>Reset</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div>Fastest</div>
+          <div class="stat-value" id="fastest">--:--</div>
+        </div>
+        <div class="stat">
+          <div>Slowest</div>
+          <div class="stat-value" id="slowest">--:--</div>
+        </div>
+        <div class="stat">
+          <div>Average</div>
+          <div class="stat-value" id="average">--:--</div>
+        </div>
+      </div>
+
+      <div class="laps">
+        <div class="lap-header">
+          <div>Lap</div>
+          <div>Lap Time</div>
+          <div>Total</div>
+        </div>
+        <div id="lapsList"></div>
+      </div>
+
+      <div class="footer">
+        <div><kbd>Space</kbd> Start/Stop <kbd>L</kbd> Lap <kbd>R</kbd> Reset</div>
+        <div class="export" id="export">Export CSV</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Picker Modal -->
+  <div class="modal" id="bgModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Choose Background</h3>
+        <button class="close-btn" id="closeBg">✕</button>
+      </div>
+      <div class="bg-options">
+        <div class="bg-preset" data-bg="none">
+          <div class="bg-preview default"></div>
+          <span>Default</span>
+        </div>
+        <div class="bg-preset" data-bg="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80">
+          <div class="bg-preview" style="background-image: url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80)"></div>
+          <span>Mountains</span>
+        </div>
+        <div class="bg-preset" data-bg="https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=1920&q=80">
+          <div class="bg-preview" style="background-image: url(https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=400&q=80)"></div>
+          <span>Space</span>
+        </div>
+        <div class="bg-preset" data-bg="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1920&q=80">
+          <div class="bg-preview" style="background-image: url(https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=400&q=80)"></div>
+          <span>Abstract</span>
+        </div>
+        <div class="bg-preset" data-bg="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1920&q=80">
+          <div class="bg-preview" style="background-image: url(https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&q=80)"></div>
+          <span>Nature</span>
+        </div>
+      </div>
+      <div class="upload-section">
+        <label for="bgUpload" class="upload-btn">
+          📤 Upload Your Own
+          <input type="file" id="bgUpload" accept="image/*" hidden>
+        </label>
+        <button class="remove-bg" id="removeBg">Remove Background</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
