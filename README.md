@@ -47,17 +47,18 @@ stopwatch/
 | `R` | Reset timer |
 | `Esc` | Close background picker |
 
-📋 Requirements Met
+## 📋 Requirements Met 
+
 This project was built for an internship task requiring:
--✅ Interactive and user-friendly stopwatch web application             
--✅ Functions for starting, pausing, and resetting the stopwatch
--✅ Tracking and displaying lap times                                       
--✅ Accurate measurement and recording of time intervals       
 
+- ✅ Interactive and user-friendly stopwatch web application
+- ✅ Functions for starting, pausing, and resetting the stopwatch  
+- ✅ Tracking and displaying lap times
+- ✅ Accurate measurement and recording of time intervals
 
-Author:Ananya Pandey
-Internship: Web Development Intern @ SkillCraft Technology
-Year: 2026
+**Author:** Ananya Pandey  
+**Internship:** Web Development Intern @ SkillCraft Technology  
+**Year:** 2026
 
 
 
