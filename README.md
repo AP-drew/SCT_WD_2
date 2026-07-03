@@ -1,4 +1,4 @@
-# SCT_WD_2
+
 # WatchX - Premium Stopwatch Web App
 
 A modern, interactive stopwatch application built with vanilla HTML, CSS, and JavaScript. Features millisecond precision, lap tracking, analytics, and customizable backgrounds.
@@ -47,17 +47,8 @@ stopwatch/
 | `R` | Reset timer |
 | `Esc` | Close background picker |
 
-## 📋 Requirements Met 
 
-This project was built for an internship task requiring:
-
-- ✅ Interactive and user-friendly stopwatch web application
-- ✅ Functions for starting, pausing, and resetting the stopwatch  
-- ✅ Tracking and displaying lap times
-- ✅ Accurate measurement and recording of time intervals
-
-**Author:** Ananya Pandey  
-**Internship:** Web Development Intern @ SkillCraft Technology  
+**Author:** Ananya Pandey   
 **Year:** 2026
 
 
